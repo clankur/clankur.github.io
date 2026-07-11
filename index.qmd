@@ -1,0 +1,55 @@
+---
+title: "Research"
+---
+
+I'm Ankur — an independent LLM researcher working on LLM pretraining, reinforcement
+learning, and shrinking the KV cache. What follows are writeups of my experiments,
+grouped by the codebase they came out of. Previously at Microsoft and AWS.
+
+[GitHub](https://github.com/clankur){.btn .btn-outline-primary .btn-sm}
+
+---
+
+## [seqax](https://clankur.github.io/seqax/)
+
+Pretraining experiments in [seqax](https://github.com/clankur/seqax), a small LLM
+pretraining codebase in JAX.
+
+| Report | Summary |
+|--------|---------|
+| [Shared KV](https://clankur.github.io/seqax/shared_kv.html) | Tying keys and values in multi-head attention — tested at 270M and 1B on C4 |
+| [Position Embeddings](https://clankur.github.io/seqax/position_embeddings.html) | CoPE vs ALiBi vs RoPE at 31M scale |
+| [Power Scheduler](https://clankur.github.io/seqax/power_scheduler.html) | 95-run HPO sweep of the power-law LR schedule vs cosine at 37M |
+| [LCM](https://clankur.github.io/seqax/lcm.html) | Jointly-trained Large Concept Model for KV cache compression at 31M |
+
+## [pooner](https://clankur.github.io/rooner/)
+
+GRPO training for teaching a small LLM to play RuneScape, in
+[pooner](https://github.com/clankur/rooner).
+
+| Report | Summary |
+|--------|---------|
+| [LLMs yearn for the mines](https://clankur.github.io/rooner/exp161.html) | Mode collapse in one gradient step |
+
+## [doomer](https://clankur.github.io/doomer/)
+
+RL experiments in [doomer](https://github.com/clankur/doomer), a PyTorch RL training
+codebase using ViZDoom.
+
+| Report | Summary |
+|--------|---------|
+| [GRPO vs PPO](https://clankur.github.io/doomer/grpo-vs-ppo.html) | GRPO fails on ViZDoom: 1/27 configs learned vs PPO's 6/6 |
+
+## [rooflines](https://clankur.github.io/rooflines/)
+
+| Report | Summary |
+|--------|---------|
+| [Roofline Model Analysis](https://clankur.github.io/rooflines/) | Compute and memory bounds for dense & sparse transformers |
+
+## Acknowledgements
+
+Thanks to the [MatX team](https://matx.com/) for their implementation of GPT in seqax,
+which I used as a base for my pretraining experiments.
+
+Thanks to the [Google TPU Research Cloud](https://sites.research.google/trc/about/),
+which has supported my investigations.

@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Ankur Mishra"
+  description: "Research reports on LLM pretraining, RL, and efficient inference."
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+    right:
+      - icon: github
+        href: https://github.com/clankur
+        aria-label: GitHub
+
+format:
+  html:
+    toc: false
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
