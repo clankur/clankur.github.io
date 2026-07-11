@@ -22,10 +22,10 @@ pretraining codebase in JAX.
 | [Power Scheduler](https://clankur.github.io/seqax/power_scheduler.html) | 95-run HPO sweep of the power-law LR schedule vs cosine at 37M |
 | [LCM](https://clankur.github.io/seqax/lcm.html) | Jointly-trained Large Concept Model for KV cache compression at 31M |
 
-## [pooner](https://clankur.github.io/rooner/)
+## [rooner](https://clankur.github.io/rooner/)
 
 GRPO training for teaching a small LLM to play RuneScape, in
-[pooner](https://github.com/clankur/rooner).
+[rooner](https://github.com/clankur/rooner).
 
 | Report | Summary |
 |--------|---------|
