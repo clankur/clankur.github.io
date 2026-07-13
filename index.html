@@ -304,7 +304,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I’m an LLM researcher working on LLM pretraining, reinforcement learning, and investigating strategies to reduce the KV cache bottleneck. What follows are writeups of my experiments, grouped by the codebase they came out of. Previously at Microsoft and AWS.</p>
+<p>I’m an LLM researcher working on pretraining and reinforcement learning. Through Google TRC, I investigated strategies to reduce the KV cache bottleneck. What follows are writeups of my experiments, grouped by the codebase they came out of. Previously at Microsoft and AWS.</p>
 <hr>
 <section id="seqax" class="level2">
 <h2 class="anchored" data-anchor-id="seqax"><a href="https://clankur.github.io/seqax/">seqax</a></h2>
@@ -484,7 +484,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/clankur\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
