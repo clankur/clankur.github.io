@@ -2,8 +2,8 @@
 title: "Ankur Mishra"
 ---
 
-I'm an LLM researcher working on LLM pretraining, reinforcement
-learning, and investigating strategies to reduce the KV cache bottleneck. What follows
+I'm an LLM researcher working on pretraining and reinforcement
+learning. Through Google TRC, I investigated strategies to reduce the KV cache bottleneck. What follows
 are writeups of my experiments,
 grouped by the codebase they came out of. Previously at Microsoft and AWS.
 
